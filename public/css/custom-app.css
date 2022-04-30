@@ -1,0 +1,1718 @@
+html{ position: relative; font-size: 62.5%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; text-size-adjust: 100%; text-rendering: optimizeLegibility;}
+body,html{font-family: 'Segoe UI';  }
+
+.fontl{font-weight:300;}
+.fontsb{font-weight:600;}
+.lighttext{color:#6d7175;}
+
+.font-11{font-size:11px;}
+.font-12{font-size:12px;}
+.font-13{font-size:13px;}
+.font-14{font-size:14px;}
+.font-15{font-size:15px;}
+.font-16{font-size:16px;}
+.font-17{font-size:17px;}
+.font-18{font-size:18px;}
+.font-19{font-size:19px;}
+.font-20{font-size:20px;}
+.font-21{font-size:21px;}
+.font-22{font-size:22px;}
+.font-23{font-size:23px;}
+.font-24{font-size:24px;}
+.font-25{font-size:25px;}
+.font-26{font-size:26px;}
+
+/*.Polaris-Button{min-height:auto; font-size:13px;   height:34px;}*/
+
+.Polaris-Badge { font-size: 13px; line-height: 14px; padding: 4px 7px;}
+.Polaris-Badge__Pip { height: 10px; width: 10px; margin: 0; margin-right: 4px;}
+.Polaris-Badge { color: #202223;}
+span.Polaris-Badge__Pip {
+    color: #8a6116;
+}
+.Polaris-Card { border-radius: 5px; /*border: 1px solid #e1e3e5; box-shadow: 0 0 1px rgb(63 63 68 / 15%);*/}
+
+.Polaris-ResourceItem__Container {padding: 15px 26px;}
+a.Polaris-Button:hover {text-decoration: none;}
+/*li.Polaris-ResourceItem__ListItem + li.Polaris-ResourceItem__ListItem {border-top: 0 none;}*/
+
+.Polaris-SkeletonPage__Page{padding:0; margin:0px 0; max-width:100%;}
+.Polaris-SkeletonBodyText__SkeletonBodyTextContainer{margin: 50px 0;}
+/*Header*/
+
+.headrebar { padding: 0 2rem; border-bottom: 1px solid #c9cccf;}
+.headrebar nav.navbar { padding: 0; margin-bottom: -1px;}
+.headrebar nav.navbar ul.navbar-nav li {margin-right:4px;}
+.headrebar nav.navbar ul.navbar-nav li a { padding: 15px; font-weight: 400; color:#637381; position:relative; font-size: 15px;}
+.headrebar nav.navbar ul.navbar-nav li a.nav-link.active,
+.headrebar nav.navbar ul.navbar-nav li a.nav-link.active:hover { color: #008060; font-weight: 600; /*border-bottom: 2px solid #008060;*/}
+.headrebar nav.navbar ul.navbar-nav li a.nav-link:hover { color: #000; /*border-bottom: 2px solid rgb(0 0 0 / 34%);*/}
+.headrebar nav.navbar ul.navbar-nav li a.nav-link:after { position: absolute; content: ''; width: 100%; height: 3px; border-radius: 15px 15px 0 0; background: rgb(153, 158, 164,0); left: 0; bottom: 0;}
+.headrebar nav.navbar ul.navbar-nav li a.nav-link:hover:after {background: rgb(153, 158, 164);} 
+.headrebar nav.navbar ul.navbar-nav li a.nav-link.active.active:after { background: #008060; }
+/*Header*/
+
+.customers-hold .customers-tabs ul.nav { border-bottom: 1px solid #ddd; padding: 0 15px;}
+.customers-hold .customers-tabs ul.nav li {}
+.customers-hold .customers-tabs ul.nav li a {padding:17px 12px; color:#6d7175; position: relative; font-size: 14px; margin:0 5px 0 0;/*margin-bottom: -2px;border-bottom: 3px solid transparent;*/}
+.customers-hold .customers-tabs ul.nav li a:hover { color: #202223;/*border-bottom: 2px solid rgb(153, 158, 164);*/} 
+.customers-hold .customers-tabs ul.nav li a.active{/*border-bottom: 2px solid #45467f;*/ color: rgb(32, 34, 35);}
+.customers-hold .customers-tabs ul.nav li a:after { position: absolute; content: ''; width: 100%; height: 3px; border-radius: 15px 15px 0 0; background: rgb(153, 158, 164,0); left: 0; bottom: 0;}
+.customers-hold .customers-tabs ul.nav li a:hover:after {background: rgb(153, 158, 164);} 
+.customers-hold .customers-tabs ul.nav li a.active.active:after { background: #008060; }
+
+.customer-table table,
+.customer-table table.dataTable {border-bottom: 0; width:100%;}
+.customer-table table tr th,
+.customer-table table.dataTable tr th{/*white-space: pre; */ font-weight: 600; background: none !important;}
+.customer-table table tr td b,
+.customer-table table.dataTable tr td b{ font-weight: 600;}
+.customer-table table tr th,
+.customer-table table tr td,
+.customer-table table.dataTable tr th,
+.customer-table table.dataTable tr td {font-size:14px;  border-bottom: 1px solid #dfe2e7;}
+.customer-table table tr td,
+.customer-table table.dataTable tr td {padding: 8px 10px;}
+/*.customer-table table.dataTable tr th:nth-child(2) {width: 200px !important;}
+.customer-table table.dataTable tr th:nth-child(5), .customer-table table.dataTable tr th:nth-child(6) {white-space: pre;}*/
+.customer-table table.dataTable tbody tr:hover {background:#f6f7f8;}
+.customer-table table.dataTable tr td a:hover {/*color: #006fbb;*/ color: #212529; text-decoration: underline;}
+.customer-table table tr td a,
+.customer-table table.dataTable tr td a,
+.customer-table table tr td a.id-no {color:#212529; font-weight:600; text-decoration: none;}
+.customer-table table tr td span.Polaris-Badge {padding: 4px 8px 5px;}
+
+.customer-table .dataTables_info,
+.customer-table .dataTables_length,
+.customer-table .dataTables_paginate > span {display: none;}
+
+.customer-table .dataTables_filter {width: calc(100% - 36px); margin:15px 18px 0 0;}
+.customer-table .dataTables_filter label {margin: 10px 0; width: 100%; align-items: center; display: flex; border-radius: 4px 4px 4px 4px !important; border: 1px solid #ccc;}
+.customer-table .dataTables_filter label svg {width:20px;  fill:#637381;  margin:0 7px;}
+.customer-table .dataTables_filter label input[type="search"] { outline: none; border: 0 none; height: 35px; width: 100%; /*font-size: 14px;*/ font-size:15px; margin-right: 1px; margin-left: 0;}
+.customer-table .dataTables_filter label i.fa { padding: 5px 10px; align-items: center; opacity: .4; font-size: 16px;}
+.customer-table .dataTables_paginate { margin: 12px auto; float: initial; text-align: center;}
+.customer-table table.dataTable label.iconcheck-box {display:flex;}
+label.iconcheck-box {margin: 0px 0 0 0px;}
+label.iconcheck-box input[type="checkbox"] {position: absolute; opacity: 0;}
+label.iconcheck-box span { width: 18px; height: 18px; border: 2px solid #8c9196; display: inline-block; border-radius: 3px;}
+label.iconcheck-box input[type="checkbox"]:checked + span { border: 2px solid #2c6ecb; background: #2c6ecb;}
+label.iconcheck-box span svg path {}
+label.iconcheck-box span svg { margin:-3px; max-width: 25px; width: auto; max-height: 26px; opacity: 0;}
+label.iconcheck-box input[type="checkbox"]:checked + span svg { fill: #fff; color: #fff; opacity: 1;}
+ 
+
+.customer-table .dataTables_paginate a {
+    width: 38px;
+    height: 36px;
+    cursor: pointer !important;
+    background: #fff;
+    position: relative;
+    margin: 0 0 !important;
+    border: 1px solid #8c9196 !important;
+    font-size: 10px;
+}
+.customer-table .dataTables_paginate a.disabled {pointer-events: none;  opacity: .5;}
+.customer-table .dataTables_paginate a:focus {box-shadow: none;}
+.customer-table .dataTables_paginate a:before {content: '';left: 0;position: absolute; color: #006fbb; width:38px; height: 36px; line-height:30px; font-size: 19px;z-index: 9999;text-align: left;top: 0;text-indent: 0;font-weight: normal;text-align: center;}
+/*.customer-table .dataTables_paginate a.previous:before {content: '❮';}
+.customer-table .dataTables_paginate a.next:before {content: '❯';}*/
+.customer-table .dataTables_paginate a.previous:before {  
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' class='Polaris-Icon__Svg_375hu' focusable='false' aria-hidden='true'%3E%3Cpath d='M17 9H5.414l3.293-3.293a.999.999 0 1 0-1.414-1.414l-5 5a.999.999 0 0 0 0 1.414l5 5a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L5.414 11H17a1 1 0 1 0 0-2z'%3E%3C/path%3E%3C/svg%3E");  
+       content: ''; background-size: 20px; background-repeat: no-repeat;  background-position: 8px 7px; opacity: .6;}
+
+.customer-table .dataTables_paginate a.next:before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' class='Polaris-Icon__Svg_375hu' focusable='false' aria-hidden='true'%3E%3Cpath d='M17.707 9.293l-5-5a.999.999 0 1 0-1.414 1.414L14.586 9H3a1 1 0 1 0 0 2h11.586l-3.293 3.293a.999.999 0 1 0 1.414 1.414l5-5a.999.999 0 0 0 0-1.414z'%3E%3C/path%3E%3C/svg%3E");
+      content: ''; background-size: 20px; background-repeat: no-repeat;  background-position: 8px 7px; opacity: .6;}
+
+.customer-table .dataTables_paginate a.next {border-radius: 0 3px 3px 0 !important;}
+.customer-table .dataTables_paginate a.previous {border-radius: 3px 0 0 3px  !important;border-right: 0 none !important;}
+.customer-table .dataTables_paginate a:hover {background:#ededed !important;color: #000 !important;}
+.customer-table .dataTables_paginate a.disable {opacity: .5 !important;pointer-events: none;}
+ 
+.customer-table .dataTables_wrapper > .row > .col-sm-12.col-md-6 { display: none;}
+.customer-table .dataTables_wrapper > .row > .col-sm-12.col-md-6 + .col-sm-12.col-md-6 {width: 100%; display: block; flex: 0 0 100%;  max-width: 100%;}
+.customer-table .dataTables_wrapper > .row > .col-sm-12.col-md-6 + .col-sm-12.col-md-6 .dataTables_filter {}
+.customer-table .dataTables_wrapper > .row > .col-sm-12.col-md-6 + .col-sm-12.col-md-6 .dataTables_filter input.form-control {padding-left: 37px;background: url('../images/searchbard-icon.png');background-repeat: no-repeat;background-position: 7px 9px;}
+
+/*.customer-table table tr th:first-child,
+.customer-table table tr td:first-child {padding: 20px 15px 20px 20px !important; background: none !important;}*/
+.customer-table table tr th:first-child:after,
+.customer-table table tr th:first-child:before {content: none;}
+.customer-table table tr th {padding:10px 18px; padding-right: 25px !important;}
+div.dataTables_wrapper div.dataTables_paginate {text-align:center; padding:15px;}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(https://cdn.shopify.com/s/files/1/0603/4089/5915/files/79c027319f.png?v=1633509586) no-repeat;
+    width: 20px;
+    height: 20px;
+    margin:2px -7px 0 0;
+    border-width: thin;
+}
+ 
+
+/*Customer detail*/
+/*.Polaris-Header-Title{ font-size: 24.58px; line-height: inherit; margin: 0; font-weight: bold;}*/
+
+.imgwithtxt {display: flex;}
+.imgwithtxt .imgwithimg img, 
+/*.imgwithtxt .imgwithimg svg { width: 57px;}*/
+.imgwithtxt .imgwithimg img, .imgwithtxt .imgwithimg img, .imgwithtxt .imgwithimg svg {
+    background-color: #fff;
+    width: 52px;
+    height: 65px;
+    object-fit: contain;
+    border: 0.0625rem solid #e1e3e5;
+    box-shadow: none;
+    padding: 2px;
+    border-radius: 3px;
+} 
+.imgwithtext h4 {margin-bottom: 3px; /*font-size:16px;*/ font-weight: 600;}
+.imgwithtext span{font-size:15px;}
+.ordernoted {padding: 18px;}
+
+li.Polaris-List__Item.font-15.lighttext::marker {font-size: 22px; line-height: 1px; color: #95a7b7;}
+.Polaris-Icon__Svgggp{width:20px;}
+.ordernoted-table table.table {border: 0 none;  margin: 0;}
+.ordernoted-table table.table th,
+.ordernoted-table table.table td {border: none;  padding: 0 15px  15px 0; font-size: 16px;font-weight:600;}
+.ordernoted-table table.table td { font-weight: 400;  line-height: 28px; font-size: 14px;}
+.ordernoted-table table.table td a{font-weight:600; color: rgb(32, 34, 35); }
+
+
+.billingshipping-add-hold {display: flex;}
+.billingshipping-add-hold > div {width: 50%;}
+.billingshipping-add {}
+.billingshipping-add h3 {margin: 0;padding:14px;font-size: 20px;font-weight: 600;border-bottom: 1px solid #e1e3e5;}
+.detail-shopify {padding: 20px;}
+.detail-shopify h4 {font-size: 14px;font-style: italic;font-weight: 600;margin-bottom: 15px;}
+.detail-shopify .info {font-size: 14px;}
+.detail-shopify .info .name {opacity: .7;display: block;margin-bottom: 8px;}
+.detail-shopify .info p {margin: 11px 0;opacity: .8;}
+.detail-shopify .info p.pnumber {display: flex;color: #637381;font-weight: 600;opacity: 1;}
+.detail-shopify .info p.pnumber img {margin-right: 15px;}
+
+
+.cardheading { font-size:16px; font-weight: 600; margin: 0;}
+ 
+.addommentssec {}
+.addommentssec .commentstxet { display: flex; width: 100%; border: 1px solid #ccc; padding: 5px;}
+.addommentssec span { opacity: .7; font-size: 12px; display: block; margin-bottom: 15px;}
+.addommentssec .commentstxet input[type="text"] { width: 100%; border: 0 none; outline: none; height: 38px; font-size: 16px;}
+.addommentssec .commentstxet span.comment_err { position: absolute; z-index: 1; padding: 9px; margin: 0;}
+.addommentssec  .Polaris-Button {height: 38px; width:170px;}
+
+
+.Polaris-ProgressBar__Indicator {border-radius: 5.6px;}
+
+ul.analysistat li { display: inline-block;  width: 33%;  text-align: center;}
+ul.analysistat { padding: 5px;}
+ul.analysistat li.active {color: #449da7;  font-weight: bold;}
+
+
+.carddatl { display: flex;}
+.carddatl img { margin-right: 15px;}
+
+.fraud-compliance-sec {clear: both; display: inline-block; width: 100%;}
+.fraud-compliance-sec label { display: flex; font-size: 14px; line-height: initial;}
+.fraud-compliance-sec label input[type="checkbox"] { margin-top: 4px; margin-right: 10px;}
+.card-tas {margin:15px 0;}
+.card-tas table.table, .card-tas table.table th,.card-tas table.table td { border: 0 none; padding-bottom: 0;}
+.fraud-compliance-sec label input[type="checkbox"] {position: absolute; opacity: 0;}
+.fraud-compliance-sec label {padding-left:25px; position:relative; line-height:23px;}
+.fraud-compliance-sec label span {position:absolute; content:''; width:18px; height:18px; border:2px solid #ccc; border-radius:2px; left:0; top:3px;}
+.fraud-compliance-sec label input[type="checkbox"]:checked + span {border-color: #5c6ac4;}
+.fraud-compliance-sec label input[type="checkbox"]:checked + span:after{content:'✓';font-size: 16px;line-height: 13px;display: block;font-weight: bold;color: #5c6ac4;}
+.fraud-compliance-sec .rating-css{display: inline-block; float: left;}
+.fraud-compliance-sec .rating-css .star-icon {text-align: left;}
+.fraud-compliance-sec .rating-css .star-icon label.fa { display: initial; margin: 0; padding: 0; text-shadow: none; font-size:38px;}
+.fraud-compliance-sec > span {display: inline-block; padding: 26px 0  0 22px;}
+.fraud-compliance-sec .rating-btn {clear: both;}
+.modal-title { font-size: 25px;}
+.modal-dialog {max-width: 700px; height: 450px;}
+.modalfrm label{font-size:14px; opacity:0.7;}
+.modalfrm .modaltextarea{width:100%;  height: 160px; border-color: #dee2e6;}
+/*.modal-header,.modal-body,.modal-footer { padding: 30px;}*/
+.modal-content { border-radius: 1rem;}
+.modal-header button.close  { line-height: 20px; padding: 0; margin: 0;}
+.modal-header button.close span {font-size: 25px;line-height: 20px;}
+/*Customer detail*/
+
+.custdeatltable table.table tr th {font-weight: 600;}
+.custdeatltable table.table tr th,
+.custdeatltable table.table tr td {text-align: center;border: none;}
+
+.starheading {}
+.custdeatltable table th h3 {}
+.starheading {display:inline-block; width:100%;}
+.starheading h3 {float: left; margin-bottom:0 !important;}
+.starheading .starrate {float:right;}
+.fa-star{color: #503b0a}
+.checked {color: #ff0;}
+
+.bigstar .fa{font-size: 30px; margin: 15px 5px 15px 0;}
+.imgwithimg {margin-right: 15px;}
+.footer a {
+    color: #202223;
+}
+.form-control {height:36px; font-size:14px; border: solid #bfbfbf 1px !important;}
+.form-control { margin-bottom: 15px;}
+.select2-container--default.select2-container--focus .select2-selection--multiple,
+.select2-container--default.select2-container--focus .select2-selection--multiple,
+.select2-container--default .select2-selection--multiple{height: 34px; border: 0 none !important; }
+.tagsselect { display: flex; padding: 3px; border: solid #bfbfbf 1px !important; border-radius: 4px;}
+.tagsselect-group { padding: 23px; border: solid #bfbfbf 1px !important; border-radius: 4px;}
+li.select2-selection__choice { background: #efefef; border: 1px solid #e1e1e1; position: relative;}
+span.select2-selection__choice__remove { top: -3px; position: absolute; right: -3px; line-height: 7px; border-radius: 50px; background: #171717; height: 10px; width: 10px; color: #fff; text-align: center;}
+.tagsselect-tags {}
+.tagsselect-tags ul{ padding: 0;}
+.tagsselect-tags ul li { list-style: none; padding: 3px 10px 3px 5px; display: inline-block; border-radius: 3px;}
+ span.select2-selection__choice__remove a {cursor: pointer; color: #fff;}
+.tagsselect select.form-control { height: 35px;  margin: 0;  border: 0 none !important; font-size: 13px;}
+.tagsselect select.form-control :focus {box-shadow: none;}
+
+/* rating */
+.rating-css div { color: #ffe400; font-size: 30px; font-family: sans-serif; font-weight: 800; text-align: center; text-transform: uppercase; padding: 20px 0;}
+.rating-css input { display: none;}
+.rating-css input + label { font-size: 60px; text-shadow: 1px 1px 0 #8f8420; cursor: pointer;} 
+.rating-css input:checked + label ~ label { color: #b4afaf;}
+.rating-css label:active { transform: scale(0.8); transition: 0.3s ease;}
+
+/* End of Star Rating */
+
+
+
+/*chatbox*/
+
+.commentstxethld {display: flex;}
+.commentstxethld > img {height: 50px; margin-right:15px; }
+
+.ttlistdatetime { display: flex; width: auto; margin:30px  0 10px 76px;}
+.ttlistdatetime .ttlisttime { margin-left: auto;}
+.ttlist-commant { display: flex; padding: 20px; color: rgba(32, 34, 35, 1);}
+.ttlist-commant .ttlistdpdwn {}
+.ttlist-commant img { margin-right: 14px; height: 50px;}
+.ttlist-commant button.dropdown-toggle:after { content: none;}
+.ttlistdatemainbx { position: relative; z-index: 1; overflow: hidden;}
+.ttlistdatemainbx:before { position: absolute; content: ''; width: 3px; height:100%; background: #dfe3e8; top: 118px; left: 39px; z-index: -1;}
+
+/*chatbox*/
+
+
+.order-action { padding: 30px 15px; text-align: center;}
+span.Polaris-Icon {}
+.order-action .detail { text-align: center; align-items: center; margin: 0 0 23px;}
+.order-action .detail span { margin: 0 4px; display: inline-block;}
+.order-action .detail .Polaris-Icon {}
+.order-action .detail span.count { font-size: 30px;}
+.order-action span.Polaris-Badge__Content { font-size: 14px; padding:0 9px 2px;}
+
+ 
+.oderdestlisthold{position: relative; width:100%; padding:25px;}
+.oderdestlisthold ul {display: flex;padding: 0;flex-wrap: wrap; margin: 0 -7px; position: relative;}
+.oderdestlisthold ul li form#uploadForm .progress-bar { position: absolute; top: -25px; font-size: 12px; height: 16px; max-width: calc(100% - 14px); border-radius: 50px;}
+.Polaris-Modal-Section .oderdestlisthold {padding:25px; width:100%; max-height: 56vh; overflow-y: auto;}
+.oderdestlisthold ul li {list-style: none;flex: 0 0 18%;display: inline-block;margin: 1%; text-align: center;}
+.oderdestlisthold ul li a svg {width:15px;}
+.oderdestlisthold ul li a {position:absolute; top:0; right:0; opacity:0; background:#006fbb; padding:0px 3px 3px;}
+.oderdestlisthold ul li a:hover{opacity:1;}
+.oderdestlisthold ul li .oderdestlistimg img {width: 100%; object-fit: contain;height: 160px;}
+.oderdestlisthold ul li .oderdestlistimg {position:relative; box-shadow: 0 0 3px #626262; border-radius: 5px; overflow:hidden;}
+.oderdestlisthold ul li .oderdestlistimg .Polaris-Stack__Item {}
+.oderdestlisthold ul li .Polaris-DropZone {min-height: 12.5em;}
+.oderdestlisthold ul li .Polaris-DropZone,
+.oderdestlisthold ul li .oderdestlistimg{transition: .3s;}
+/*.oderdestlisthold ul li .Polaris-DropZone:hover,
+.oderdestlisthold ul li .oderdestlistimg:hover {box-shadow: 0 0 6px 1px #626262;}*/
+.oderdestlisthold ul li .oderdestlistimg:hover a {opacity:.8;}
+.oderdestlisthold .progressholder {position: absolute;  top: 12px;  width: calc(100% - 50px);}
+
+.oderdestlistimg {max-height: 160px;height: 160px;}
+#uploadStatus{padding:0 0 !important ; margin: 0 !important;}
+.addomment .addodate { display: block; color: rgb(109, 113, 117); margin-bottom: 19px; font-size: 12px; text-transform: uppercase; font-weight: 600;}
+.addomment a[data-toggle="collapse"] { color: rgb(32, 34, 35); font-size: 14px}
+ul.addommentlist li .addomment { font-size: 14px;}
+ul.addommentlist li {list-style: none;margin-bottom: 32px;}
+ul.addommentlist li .addomment span.addotime { float: right; color: rgb(109, 113, 117);}
+ul.addommentlist li .dolbal { display: inline-block; background-color: #00a0ac; width: 19px; height: 19px; border-radius: 50px; border: 3px solid #fff; position: absolute; left: -29px;}
+ul.addommentlist li .addodate { color: rgb(109, 113, 117); font-size: 12px; text-transform: uppercase; margin-bottom: 20px; display: block; font-weight: 600;}
+.spinner-holder {position: absolute;  top: 42%;  z-index: 1;  width: 20px;  width: 100%;}
+.oderdestlisthold ul li span.Polaris-Spinner svg { width: 20px;}
+
+.colose-colorrail { display: flex; flex-wrap: wrap;}
+.colose-colorrail label { position: relative; margin: .5rem 0 0 .5rem; color: #202223; font-weight: 500;}
+.colose-colorrail label span {position: relative; width: 28px; height: 28px; display: block;font-size: 12px; padding: 2px; text-align: center; border-radius: 50px; border: 1px solid #00000080; box-shadow: 0 0 0 1px #0000; cursor: pointer;}
+.colose-colorrail label input[type="radio"],
+.colose-colorrail label input[type="checkbox"] { position: absolute; opacity: 0;cursor: pointer;}
+/*.colose-colorrail label input[type="checkbox"]:checked + span,
+.colose-colorrail label input[type="radio"]:checked + span {border: 1px solid #000000; box-shadow: 0 0 0 1px rgb(0 0 0 / 25%);}*/
+.colose-colorrail label input[type="checkbox"]:checked + span:after {
+    position: absolute;
+    content: '\2713';
+    line-height: 20px;
+    color: #fff;
+    font-weight: bold;
+    background: #32323278;
+    border-radius: 50px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    top: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+.pro-pre-tab ul.nav {width: 100%;}
+.pro-pre-tab ul.nav li.nav-item {display: inline-block;float: left;width: 50%;text-align: center;}
+.pro-pre-tab ul.nav li.nav-item a.active {border-bottom: 1px solid #007bff;}
+.pro-pre-tab .tab-content img {width: 100%; height: 100%; object-fit: contain;}
+.draging {font-size: 20px;line-height: 36px;font-weight: 600;padding: 15px;text-align: center;}
+.tab-content>.tab-pane > label.Polaris-Labelled--hidden {width: 100%;}
+.tab-content>.tab-pane > label.Polaris-Labelled--hidden .Polaris-DropZone {min-height: 310px;} 
+.oderdestlisthold ul li label.oderdestlistimg {box-shadow: none;border-radius: 0;overflow: hidden;text-align: center;width: 100%; position: relative;}
+.oderdestlisthold ul li label.oderdestlistimg img {width: 100%; border: 1px solid #ccc; border-radius: 5px; height: 117px; object-fit: contain;}
+.oderdestlisthold ul li label.oderdestlistimg:hover {box-shadow: none; }
+.oderdestlisthold ul li label.oderdestlistimg:hover img {box-shadow: none; border: 1px solid #ccc;}
+.oderdestlisthold ul li label.oderdestlistimg .inputhld {position: absolute; top: 0; z-index: 1; left: 7px;}
+.oderdestlisthold ul li label.oderdestlistimg .inputhld input[type="radio"],
+.oderdestlisthold ul li label.oderdestlistimg .inputhld input[type="checkbox"] {height: 17px;width: 17px;}
+.oderdestlisthold ul li label.oderdestlistimg .inputhld input {margin-top: 7px;} 
+.oderdestlisthold ul li label.oderdestlistimg input[type="radio"] {position: absolute; opacity: 0;}
+.oderdestlistimg input[type="radio"] + .prod-sect {border: 1px solid transparent;}
+.select-prodtc {margin-bottom: 10px;}
+.select-prodtc h2.Polaris-Heading {margin-bottom: 7px;}
+.select-prodtc ul.Polaris-List li {list-style: none;}
+.select-prodtc ul.Polaris-List li.Polaris-List__Item a {font-size: 14px; color: #000000b8; opacity: .8 !important; list-style: none;}
+label.prod-sect-holdcnt-Card .prod-sect-holdcnt img { width: 100%; height: 263px;  object-fit: contain;}
+label.prod-sect-holdcnt-Card .prod-sect-holdcnt img.front,
+label.prod-sect-holdcnt-Card:hover .prod-sect-holdcnt img.back { display: block;}
+label.prod-sect-holdcnt-Card .prod-sect-holdcnt img.back,
+label.prod-sect-holdcnt-Card:hover .prod-sect-holdcnt img.front { display: none;}
+label.prod-sect-holdcnt-Card input[type="checkbox"] { position: absolute; opacity: 0;}
+label.prod-sect-holdcnt-Card input[type="checkbox"]:checked + .prod-sect-holdcnt { border: 1px solid #006e52; border-radius: 5px; overflow: hidden;}
+label.prod-sect-holdcnt-Card .prod-sect-holdcnt h2.Polaris-Heading {margin: 6px; min-height:48px;}
+label.prod-sect-holdcnt-Card .prod-sect-holdcnt .sprice {margin: 15px; text-align: left; margin-top: 0;}
+label.prod-sect-holdcnt-Card .prod-sect-holdcnt span { display: block;}
+label.prod-sect-holdcnt-Card .prod-sect-holdcnt .scolor {margin: 15px; margin-top: 0;}
+.starting-price {display: flex;display: -webkit-flex;display: -ms-flexbox;justify-content: space-between;}
+.multipal-products {background: #f8f9fd;min-height: 300px;}
+.product-starting {padding: 5px 0 0;}
+.mtmb100{margin: 100px 0;}
+label.prod-sect-holdcnt-Card .prod-sect-holdcnt h2.Polaris-Heading {text-align: center;}
+.file-upload {background-color: #ffffff; width: 100%; margin: 0 auto; padding:0px; position: relative;}
+.file-upload-btn { width: 100%; margin: 0; color: #fff; background: #1FB264; border: none; padding: 10px; border-radius: 4px; box-shadow: 0 0 3px #626262; border: 2px dashed #bfbfbf; transition: all .2s ease; outline: none; text-transform: uppercase; font-weight: 700;}
+.file-upload-btn:hover { background: #1AA059; color: #ffffff; transition: all .2s ease; cursor: pointer;}
+.file-upload-btn:active { border: 0; transition: all .2s ease;}
+.file-upload-content { display: none; text-align: center;}
+.file-upload-input { position: absolute; margin: 0; padding: 0; width: 100%; height:calc(100% + 30px); outline: none; opacity: 0; cursor: pointer;  top:-30px; left:0; z-index: 1;}
+.image-upload-wrap { margin-top: 0px; border: 2px dashed #8f8f8f; transition: .5s; /*box-shadow: 0 0 3px #626262;*/ position: relative; border-radius: 4px; padding: 17px 0; overflow: hidden;}
+.image-dropping,
+.image-upload-wrap:hover { background-color: #626262; border: 2px dashed #ffffff;}
+.image-title-wrap { padding: 0 ; color: #222; position: absolute; z-index: 1; bottom: 5px; width: 100%;}
+.drag-text { text-align: center;}
+.drag-text h3 { font-weight: 100;  color: #626262; padding: 0px 0;}
+.file-upload-image {margin: auto; padding:0px; box-shadow: 0 0 3px #626262;  border-radius: 3px; object-fit: contain;}
+.image-upload-wrap:hover .drag-text img {filter: brightness(2.5);}
+.remove-image {margin: 0; color: #fff; background: #cd4535; border: none;   transition: all .2s ease; outline: none;}
+.remove-image:hover { background: #c13b2a; color: #ffffff; transition: all .2s ease; cursor: pointer;}
+.remove-image:active { border: 0; transition: all .2s ease;}
+.addimg { border: 1px solid #a3a7ab; padding: 5px; width: auto; display: block; width: 100px; margin:8px auto; clear: both; border-radius: 4px;}
+.image-title-wrap .btn { font-size: 12px; padding: 5px 9px 7px; height: auto;}
+.image-upload-wrap:hover .addimg {
+    border-color: #fff;
+    color: #fff;
+}
+.image-upload-wrap:hover h3 {
+    color: #fff;
+}
+.file-upload .drag-text svg {
+    width: 35px;
+    height: 35px;
+    color: #5c5f62;
+}
+.file-upload .image-upload-wrap:hover .drag-text svg {
+    color: #fff;
+}
+
+main[role="main"] {min-height: 96vh;}
+.addomment a svg.Polaris-Icon__Svg_375hu {width:15px;}
+.customer-table table.dataTable thead > tr > th.sorting_asc span.lable-th-text,
+.customer-table table.dataTable thead > tr > th.sorting_desc span.lable-th-text,
+.customer-table table.dataTable thead > tr > th.sorting span.lable-th-text,
+.customer-table table.dataTable thead > tr > td.sorting_asc span.lable-th-text,
+.customer-table table.dataTable thead > tr > td.sorting_desc span.lable-th-text,
+.customer-table table.dataTable thead > tr > td.sorting span.lable-th-text {padding-right:30px;}
+
+.customer-table table.dataTable thead .sorting span.lable-th-text,
+.customer-table table.dataTable thead .sorting_asc span.lable-th-text,
+.customer-table table.dataTable thead .sorting_desc span.lable-th-text,
+.customer-table table.dataTable thead .sorting_asc_disabled span.lable-th-text,
+.customer-table table.dataTable thead .sorting_desc_disabled span.lable-th-text {cursor:pointer;  position:relative;}
+
+.customer-table table.dataTable thead .sorting span.lable-th-text:before,
+.customer-table table.dataTable thead .sorting span.lable-th-text:after,
+.customer-table table.dataTable thead .sorting_asc span.lable-th-text:before,
+.customer-table table.dataTable thead .sorting_asc span.lable-th-text:after,
+.customer-table table.dataTable thead .sorting_desc span.lable-th-text:before,
+.customer-table table.dataTable thead .sorting_desc span.lable-th-text:after,
+.customer-table table.dataTable thead .sorting_asc_disabled span.lable-th-text:before,
+.customer-table table.dataTable thead .sorting_asc_disabled span.lable-th-text:after,
+.customer-table table.dataTable thead .sorting_desc_disabled span.lable-th-text:before,
+.customer-table table.dataTable thead .sorting_desc_disabled span.lable-th-text:after { position:absolute; bottom:0;  display:block;  opacity: 0.3;}
+
+.customer-table table.dataTable thead .sorting span.lable-th-text:before,
+.customer-table table.dataTable thead .sorting_asc span.lable-th-text:before,
+.customer-table table.dataTable thead .sorting_desc span.lable-th-text:before,
+.customer-table table.dataTable thead .sorting_asc_disabled span.lable-th-text:before,
+.customer-table table.dataTable thead .sorting_desc_disabled span.lable-th-text:before {right:1em; content:"\2191";}
+
+.customer-table table.dataTable thead .sorting span.lable-th-text:after,
+.customer-table table.dataTable thead .sorting_asc span.lable-th-text:after,
+.customer-table table.dataTable thead .sorting_desc span.lable-th-text:after,
+.customer-table table.dataTable thead .sorting_asc_disabled span.lable-th-text:after,
+.customer-table table.dataTable thead .sorting_desc_disabled span.lable-th-text:after {right:0.5em; content:"\2193";}
+
+.customer-table table.dataTable thead .sorting_asc span.lable-th-text:before,
+.customer-table table.dataTable thead .sorting_desc span.lable-th-text:after {opacity:1;}
+
+.customer-table table.dataTable thead .sorting_asc_disabled span.lable-th-text:before,
+.customer-table table.dataTable thead .sorting_desc_disabled span.lable-th-text:after {opacity: 0;}  
+
+.customer-table  div.dataTables_scrollBody table thead .sorting span.lable-th-text:before,
+.customer-table  div.dataTables_scrollBody table thead .sorting_asc span.lable-th-text:before,
+.customer-table  div.dataTables_scrollBody table thead .sorting_desc span.lable-th-text:before,
+.customer-table  div.dataTables_scrollBody table thead .sorting span.lable-th-text:after,
+.customer-table  div.dataTables_scrollBody table thead .sorting_asc span.lable-th-text:after,
+.customer-table  div.dataTables_scrollBody table thead .sorting_desc span.lable-th-text:after {display: none;} 
+
+.customer-table table.dataTable thead .sorting:before, 
+.customer-table table.dataTable thead .sorting:after, 
+.customer-table table.dataTable thead .sorting_asc:before, 
+.customer-table table.dataTable thead .sorting_asc:after, 
+.customer-table table.dataTable thead .sorting_desc:before, 
+.customer-table table.dataTable thead .sorting_desc:after, 
+.customer-table table.dataTable thead .sorting_asc_disabled:before, 
+.customer-table table.dataTable thead .sorting_asc_disabled:after, 
+.customer-table table.dataTable thead .sorting_desc_disabled:before, 
+.customer-table table.dataTable thead .sorting_desc_disabled:after {content: none;} 
+
+.tagscoltion .Polaris-TextField__Backdrop {height:36px;} 
+.tagscoltion .select2-container--default .select2-selection--multiple .select2-selection__rendered li span.select2-selection__choice__remove {position: initial; float: right; margin: 0; right: 0; top: 0; appearance: none; margin: 0; padding: 0; background: none; border: none; font-size: inherit; line-height: inherit; color: inherit; cursor: pointer; display: block; height: 2.8rem; width: 2.8rem; margin-left: 0.4rem; border-radius: 0 3px 3px 0; position: relative; font-size: 30px; font-weight: lighter; color: #5c5f62;}
+.tagscoltion .select2-container--default.select2-container--focus .select2-selection--multiple,
+.tagscoltion .select2-container--default.select2-container--focus .select2-selection--multiple,
+.tagscoltion .select2-container--default .select2-selection--multiple {height:auto}
+
+.tagscoltion .select2-container--focus .select2-selection--multiple .select2-selection__rendered li {padding-right: 0;background: #e4e5e7;text-transform: capitalize;}
+.tagscoltion .select2-container--default .select2-selection--multiple .select2-selection__rendered {margin-top: 36px; padding: 0;}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li.select2-search,
+.tagscoltion .select2-container--focus .select2-selection--multiple .select2-selection__rendered li:last-child {opacity: 0;}
+.pro-pre-tab .tab-content>.active { position: relative;}
+.pro-pre-tab .tab-content>.active .demoDrag.blar, .pro-pre-tab .tab-content>.active .demoDrag2.blar {
+    border: 2px solid transparent;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+#frontprint, #backprint {
+    position: relative;
+}
+.backDetails.mt-2.mb-3,
+.ArtworkDetails.mt-2.mb-3 {
+    margin-top: 0 !important;
+}
+.backDetails .Polaris-Banner--withinPage,
+.ArtworkDetails .Polaris-Banner--withinPage {
+    padding: 1rem 0 1rem;
+    margin: 0 auto !important;
+    width: 300px;
+    border-radius: var(--p-border-radius-base);
+}
+.Polaris-Banner--withinPage .text-center.w-100 b {
+    font-weight: 600;
+    color: #000; 
+    display: inline-block;
+    margin: 0 0 0.2rem;
+}
+.pro-pre-tab .tab-content>.active:hover .demoDrag.blar,
+.pro-pre-tab .tab-content>.active:hover .demoDrag2.blar {border: 2px solid #5c6ac4!important; background: rgba(92,106,196,.4);}
+.pro-pre-tab .tab-content>.active .ui-resizable a.close-text {display: none;}
+.pro-pre-tab .tab-content>.active .ui-resizable:hover  a.close-text {display: block;} 
+.pro-pre-tab .tab-content>.active .ui-resizable a.close-text { position: absolute; left: -7px; top: -7px; color: #fff; background: #ff2828; padding: 1px 5px; border-radius: 15px;}
+.pro-pre-tab .tab-content>.active .ui-resizable a.close-text:hover { background: #ff0000;}
+.pro-pre-tab .tab-content>.active div#frontprint, .pro-pre-tab .tab-content>.active div#backprint {margin-top: 15px;}
+.loaderdiv {text-align:center; position:fixed; width:100%; height:100%; background: hsl(0deg 0% 0% / 20%); z-index:99; left:0; top:0; padding-top:45vh;}
+
+/* =============== 24-01-2022 css start here =============== */
+table.dataTable tbody tr.even {
+    background: #fdfdfd;
+}
+.pro-pre-tab .tab-content .loaderdiv {
+    position: absolute;
+    height: auto;
+    z-index: 99;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    background: transparent;
+}
+span.select2-container--open .select2-dropdown--below {
+    border-top: 1px solid #aaa;
+}
+.campaign-preview {
+    margin-top: 20px;
+    border-radius: 0;
+    border: 1px #d7d7d7 solid;
+}
+.campaign-preview ul {
+    padding: 0;
+    list-style: none;
+}
+.campaign-preview ul li {
+    border-bottom: 1px #d7d7d7 solid;
+    padding: 25px;
+}
+.campaign-preview ul li h3 {
+    color: #202223;
+    font-weight: 600;
+}
+.campaign-preview ul li h3 img {
+    margin-right: 15px;
+}
+.campaign-preview ul li:last-child {
+    border: 0;
+}
+.store-btn a.btn {
+    background: #008060;
+    color: #fff;
+    font-size: 14px;
+    padding: 6px 15px;
+    white-space: nowrap;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+/*.store-btn a.btn:hover, .store-btn .col-6:first-child a.btn:hover {
+    background: #007054;
+    color: #fff;
+    border-color: #007054;
+}*/
+.campaign-preview ul li .row {
+    align-items: center;
+}
+.store-btn ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.store-btn ul li {
+    display: inline-block;
+}
+.store-btn ul li:first-child a.btn {
+    background: #fff;
+    color: #202223;
+    border: 0.1rem solid #babfc3;
+    margin-right: 5px;
+}
+.store-btn ul li:first-child a.btn:hover {
+    background: #f6f6f7;
+}
+.campaign-back-btn small {
+    background: #afe8d2;
+    color: #202223;
+    padding: 3px 12px 4px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    border-radius: 100px;
+    margin-left: 10px;
+}
+.campaign-preview ul li .col-3 p i {
+    margin-right: 5px;
+    font-size: 18px;
+    vertical-align: text-bottom;
+}
+.campaign-preview ul li .col-3 p {
+    font-weight: 600;
+    padding-left: 20px;
+}
+.campaign-preview .progress {
+    margin-right: 20px;
+}
+.campaign-back-btn {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 30px 0 0;
+}
+.campaign-back-btn .btn {
+    background: #008060;
+    color: #fff;
+    padding: 5px 20px;
+    font-size: 15px;
+}
+.campaign-back-btn .btn:hover {
+    background: #006e52;
+    color: #fff;
+} 
+table.dataTable tbody th, table.dataTable tbody td {
+    color: #202223;
+}
+.colose-colorrail.sizerail input.pro_size {
+    cursor: pointer;
+}
+#addSize5 label input.pro_size + span:after {
+    display: none;
+}
+body .dataTables_wrapper .dataTables_paginate .paginate_button, body .dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+    color: #fff !important;
+}
+.dataTables_paginate a:after {
+    position: absolute;
+    padding: 2px 15px;
+    color: #000;
+    z-index: 99999;
+    background: #fff;
+    line-height: 25px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+    font-size: 14px;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    bottom: -30px;
+}
+.dataTables_paginate a.next:after {
+    content: 'Next';
+}
+.dataTables_paginate a.previous:after {
+    content: 'Previous';
+}
+.dataTables_paginate a:hover:after {
+    opacity: 1;
+}
+a.Polaris-Button:focus::after {
+    box-shadow: none;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: #ededed !important;
+}
+.Polaris-Page-Header__RightAlign .Polaris-ButtonGroup {
+    display: none;
+}
+.select2-container--default .select2-selection--multiple li.select2-selection__choice {
+    background-color: #e4e5e7;
+    border: 0;
+    padding: 2px 8px;
+}
+.tagscoltion .select2-container--default .select2-selection--multiple ul.select2-selection__rendered li span.select2-selection__choice__remove {
+    height: auto;
+    width: auto;
+    font-size: 24px;
+    margin-top: -2px;
+    font-weight: 500;
+    color: #5c5f62;
+}
+.order-list table tr td:nth-child(4) {
+    padding-right: 0;
+    text-align: right;
+}
+.order-list table td img {
+    width: 52px;
+    height: 65px;
+    border: 1px solid rgba(225, 227, 229, 1);
+    border-radius: 0.3rem;
+    object-fit: contain;
+    background: #ffff;
+}
+/*.product-list-page table tr th:nth-child(1) {
+    width: 300px !important;
+}*/
+.product-list-page table tr td:nth-child(1) {
+    white-space: nowrap;
+}
+.product-list-page table tr th:nth-child(3) {
+    width: 100px !important;
+}
+.badge-publish {
+    padding: 4px 8px 5px;
+    background: #e4e5e7;
+    border-radius: 100px;
+    font-size: 13px;
+    line-height: 14px;
+}
+.unpublish {
+    padding: 4px 8px 5px;
+    background: #ffea8a;
+    border-radius: 100px;
+    font-size: 13px;
+    line-height: 14px;
+}
+a#next-step.Polaris-Button {
+    line-height: initial;
+}
+.modal-body {
+    padding: 1.6rem;
+}
+.custom-popup .Polaris-Modal-Section {
+    padding: 0;
+}
+.modal table tr th {
+    font-weight: 600;
+    color: #202223;
+}
+.Polaris-TextField--focus > .Polaris-TextField__Input ~ .Polaris-TextField__Backdrop::after, .Polaris-TextField__Input:focus ~ .Polaris-TextField__Backdrop::after {
+    box-shadow: none !important;
+}
+.Polaris-Modal-Footer {
+    justify-content: flex-end;
+}
+.Polaris-Button--primary.cancel-btn {
+    margin-right: 10px;
+    border: 0.1rem solid #babfc3;
+    background: #fff;
+    box-shadow: none;
+    color: #202223;
+}
+.Polaris-Button--primary.cancel-btn-2 {
+    margin-right: 10px;
+    border: 0.1rem solid #babfc3;
+    background: #fff;
+    box-shadow: none;
+    color: #202223;
+}
+.Polaris-Button--primary.cancel-btn:hover {
+    background: #f6f6f7;
+}
+span.new-badge {
+    padding: 5px 15px 5px;
+    /*background: #92e6b5;*/
+    border-radius: 100px;
+    font-size: 13px;
+    line-height: 14px;
+    display: inline-block !important;
+    margin: 10px 0 0 10px;
+    color: #202223;
+}
+/*.modal .colose-colorrail label input[type="checkbox"]:checked + span:after {
+    margin: 1px 1px 0px 1px;
+}*/
+
+.bg-danger {
+    background-color: #fdc9d0 !important;
+}
+.bg-pending {
+    background-color: #feea8b !important;
+}
+.ready-to-print {
+    background: #feb66a;
+}
+.ready-to-ship {
+    background: #a4e8f2;
+}
+.bg-shipped {
+    background: #bbe5b3;
+}
+.ready-to-pack {
+    background: #ffe294;
+}
+.order-action .detail .Polaris-Icon i {
+    font-size: 25px;
+}
+#exampleModalLong .Polaris-Modal-Footer {
+    border-top: 0;
+}
+.polaris-popup .modal-dialog {
+    max-width: 620px;
+}
+.wallet-popup .Polaris-TextField .Polaris-TextField__Prefix {
+    background: #dee2e6;
+    margin: 0 8px 0 0;
+    color: #000;
+    padding: 5px 12px;
+}
+.modal .Polaris-Modal-Header {
+    border-bottom: 0.1rem solid #e1e3e5;
+    padding: 1.3rem 2rem;
+}
+.modal .Polaris-Modal-Header h2 {
+    color: #202223;
+}
+.wallet-popup .Polaris-TextField {
+    align-items: initial;
+}
+.Polaris-Modal-CloseButton:focus:not(:active)::after {
+    box-shadow: none !important;
+}
+.modal .Polaris-Icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.app-detail-page .Polaris-Card {
+    border-radius: 0;
+    border: 1px #d7d7d7 solid;
+    box-shadow: none;
+}
+.choose-edit-color a {
+    color: #2c6ecb;
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+.choose-edit-color a:hover, .product-detail-views a:hover {
+    color: #1f5199;
+}
+.edit-color-part .Polaris-Label__Text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #202223;
+}
+.edit-color-part .form-group.mb-4 {
+    margin: 0 0 20px !important;
+}
+.edit-color-part .form-group.mb-4.choose-edit-color {
+    margin: 0 !important;
+}
+.edit-color-part table th, .edit-color-part table td {
+    padding: 0.50rem 0;
+    font-size: 1.5rem;
+}
+.edit-color-part table {
+    margin: 0;
+}
+.edit-color-part .form-group.variant.mb-4 {
+    margin: 0 !important;
+}
+.edit-color-part .Polaris-TextStyle--variationPositive {
+    color: #202223;
+}
+.edit-color-part table th {
+    width: 50%;
+}
+.edit-color-part .colose-colorrail label {
+    margin: 0.5rem 0.7rem 0 0;
+}
+.product-detail-views .Polaris-Card__Header {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-detail-views a {
+    color: #3152bb;
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+.product-detail-views select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../images/down-arrow.png);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: 96% center;
+    cursor: pointer;
+    min-height: 40px;
+    padding: 0 15px;
+}
+.product-detail-views select:focus {
+    box-shadow: none;
+}
+.product-detail-views .pro-pre-tab .tab-content {
+    border: 1px solid #dee2e6;
+    padding: 5px 0 0;
+}
+.product-detail-views .pro-pre-tab .tab-content #frontprint, .product-detail-views .pro-pre-tab .tab-content #backprint {
+    display: block;
+    margin: 0 auto !important;
+    /*width: 100% !important;
+    height: auto !important;*/
+    text-align: center;
+}
+.product-detail-views .pro-pre-tab ul a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 0 1.2rem;
+    color: #202223;
+}
+.pro-pre-tab ul.nav li.nav-item a.active {
+    border-bottom: 1px solid #3152bb;
+    color: #3152bb;
+}
+.assign-tag .Polaris-Card__Header {
+    padding: 0 0 20px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+.assign-tag .Polaris-Label__Text {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #202223;
+}
+.assign-tag .Polaris-Card__Header a {
+    color: #3152bb;
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+.assign-tag .Polaris-Card__Header a:hover {
+    color: #007bff;
+}
+.app-detail-page .Polaris-Page-Header--hasNavigation {
+    padding-top: 20px;
+}
+.product-list-page .imgwithtxt {
+    align-items: center;
+}
+.product-list-page .imgwithtext h4 {
+    margin: 0 !important;
+}
+.product-list-page .imgwithtext {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.product-list-page .imgwithtext a[title="view in shopify"] {
+    margin-left: 10px;
+    opacity: 0;
+}
+.product-list-page .imgwithtext:hover a[title="view in shopify"] {
+    opacity: 1;
+}
+.Polaris-Badge.credit {
+    background: #ffe294;
+}
+.wallet-page .customer-table table tr th:last-child {
+    text-align: right;
+    padding-right: 55px !important;
+}
+.Polaris-Breadcrumbs__Breadcrumb:focus:not(:active)::after, .Polaris-Button:focus::after {
+    box-shadow: none !important;
+}
+.product-detail-page .col-md-7 {
+    -ms-flex: 0 0 62%;
+    flex: 0 0 62%;
+    max-width: 62%;
+}
+.product-detail-page .col-md-5 {
+    -ms-flex: 0 0 38%;
+    flex: 0 0 38%;
+    max-width: 38%;
+}
+#Hintdatehide label.Polaris-Card.prod-sect-holdcnt-Card {
+    cursor: pointer;
+}
+/*canvas#viewImg {
+    width: 100%;
+}*/
+.wallet-page .customer-table table tr td {
+    border-bottom: 0;
+    border-top: 1px solid #dfe2e7;
+}
+.wallet-page .customer-table table tr:first-child td {
+    border-top: 0;
+}
+.wallet-page .customer-table table tr.add-amount td {
+    border-top: 0;
+}
+.wallet-page table tr td h6 {
+    font-weight: 600;
+    margin: 0 0 5px; 
+}
+.wallet-page table tr.add-amount {
+    background: #f9f9fa;
+}
+.wallet-page table tr.add-amount p {
+    margin: 2px 0;
+}
+.wallet-page .customer-table table tr.add-amount td {
+    padding: 30px 50px;
+}
+.wallet-page .customer-table table tr td[align="right"] div {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 30px;
+}
+.wallet-page table tr.add-amount td p span a {
+    color: #2c6ecb !important;
+    font-weight: initial;
+}
+/*.wallet-page .customer-table table tr td i {
+    font-size: 24px;
+}*/
+.wallet-page table.dataTable tbody tr:hover, .wallet-page .table-hover tbody tr:hover {
+    background: transparent;
+}
+.wallet-page .customer-table table.dataTable tbody tr.add-amount:hover {
+    background: #f9f9fa;
+}
+.success-status {
+    background: #cce7e0;
+}
+.success-status .Polaris-Badge__Pip {
+    color: #0a8568;
+}
+.pending-status {
+    background: #ffd69e;
+}
+.pending-status .Polaris-Badge__Pip {
+    color: #b98a00;
+}
+.failed-status {
+    background: #ffcccb;
+}
+.failed-status .Polaris-Badge__Pip {
+    color: #ec2029;
+}
+.wallet-price {
+    color: #29b717;
+}
+.wallet-page table tr.add-amount.active + tr td {
+    border: 0;
+}
+.red-color {
+    color: #b3110f;
+}
+.wallet-green-color {
+    color: #29b717;
+}
+.cmpaign-steps ul {
+    margin: 0 -20px 0 0;
+    padding: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-end;
+}
+.cmpaign-steps ul li {
+    list-style: none;
+    padding: 0 15px;
+    position: relative;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    font-size: 12px;
+    color: #a9a5a5;
+    min-width: 100px;
+}
+.cmpaign-steps ul li::before {
+    content: "";
+    position: absolute;
+    left: -50%;
+    top: 11px;
+    width: 100%;
+    height: 2px;
+    background: #c3cad2;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.cmpaign-steps ul li:first-child:before {
+    display: none;
+}
+.cmpaign-steps ul li.active::before {
+    background: #007f61;
+}
+.cmpaign-steps ul li p {
+    text-align: center;
+    color: #686868;
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+}
+.cmpaign-steps ul li span.order-light-green + p, .cmpaign-steps ul li span.order-pending + p {
+    color: #008162;
+}
+.cmpaign-steps ul li span {
+    display: block;
+    margin: 0 auto 0;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    background: #c1cad1;
+    font-size: 10px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #686868;
+    position: relative;
+    border-radius: 50px;
+    z-index: 1;
+}
+.cmpaign-steps ul li span.order-light-green, .cmpaign-steps ul li span.order-pending {
+    background: #aeead1;
+    color: #008162;
+}
+.cmpaign-steps ul li span.order-light-green, .cmpaign-steps ul li span.order-pending {
+    background: #aeead1;
+    color: #008162;
+}
+.cmpaign-steps ul li span.order-light-green + p, .cmpaign-steps ul li span.order-pending + p {
+    color: #008162;
+}
+.cmpaign-steps ul li span.bg-success, .cmpaign-steps ul li span.order-green {
+    background: #00805f !important;
+    color: #fff;
+}
+.cmpaign-steps ul li span.bg-success + p {
+    color: #008162;
+}
+.download-product-pdf {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+.download-product-pdf li:first-child {
+    padding-left: 0;
+}
+.download-product-pdf li:last-child {
+    padding-right: 0;
+}
+.download-product-pdf li {
+    padding: 0 5px;
+}
+.order-detail-left-part .Polaris-ResourceItem__Container {
+    padding: 2rem;
+    display: block;
+}
+.download-product-pdf a {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: #333;
+    width: 20px;
+    height: 20px;
+}
+.download-product-pdf a:hover svg {
+    color: #008060;
+}
+.back-1b {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.download-product-pdf a:hover .back-1b {
+    opacity: 1;
+    visibility: visible;
+}
+.Polaris-Page-Header__Row {
+    align-items: center;
+}
+.order-app-detail-heading {
+    padding-bottom: 10px;
+}
+.order-app-detail-heading .Polaris-Page-Header__BreadcrumbWrapper {
+    margin-right: 1rem;
+}
+.order-app-detail-heading .Polaris-Header-Title {
+    font-size: 1.8rem;
+}
+.order-app-detail-heading .Polaris-Header-Title .traking-no {
+    font-size: 1.5rem;
+}
+.app-base-product {
+    display: none;
+}
+.order-app-detail-heading .Polaris-Caption {
+    font-size: 1.5rem;
+}
+.order-app-detail-heading .Polaris-Badge {
+    margin-right: 0.3rem;
+}
+.order-detail-left-part .border-bottom .row {
+    align-items: flex-end;
+}
+.order-detail-left-part .border-bottom.row .order-quantity.col-6 {
+    margin-left: auto;
+}
+.order-detail-left-part .border-bottom.row .order-quantity.col-6 .Polaris-ButtonGroup {
+    margin: 0;
+}
+.order-detail-left-part .border-bottom.row .order-quantity.col-6 .Polaris-ButtonGroup .Polaris-ButtonGroup__Item {
+    margin: 0;
+}
+.order-detail-left-part .border-bottom .Polaris-Stack__Item p {
+    margin-left: 10px;
+}
+.order-detail-left-part .border-bottom .Polaris-Stack__Item p a {
+    margin-left: 5px;
+    color: #202223;
+}
+.order-detail-left-part .border-bottom .Polaris-Stack__Item p a:hover {
+    color: #008060;
+}
+.order-detail-left-part .Polaris-ResourceList li .Polaris-ResourceItem__Actions {
+    display: block;
+    margin: 0;
+}
+.order-detail-left-part .Polaris-ResourceItem__Content h3 a {
+    text-decoration: none;
+    margin: 0 0 4px;
+    display: inline-block;
+}
+.order-detail-left-part .Polaris-ResourceItem__Content h3 a:hover {
+    text-decoration: underline;
+}
+.order-app-detail-right-part .Polaris-Stack.Polaris-Stack--noWrap button.Polaris-Button--textAlignLeft {
+    cursor: initial;
+}
+.Polaris-Button--plain:focus:not(:active) > .Polaris-Button__Content::after {
+    box-shadow: none !important;
+}
+.Polaris-Select {
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+.order-color {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50px;
+    vertical-align: middle;
+    margin-left: 2px;
+    border: 1px solid #4a4a4a;
+}
+.order-quantity .Polaris-ButtonGroup {
+    justify-content: space-between;
+    margin-top: 0;
+}
+.order-quantity .Polaris-TextStyle--variationSubdued {
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+    font-size: 14px;
+}
+body .Polaris-ButtonGroup__Item--plain:not(:last-child), body .Polaris-ButtonGroup__Item--plain:not(:first-child) {
+    margin-right: 0;
+}
+.order-app-detail-right-part h2.Polaris-Heading {
+    padding-bottom: 0.8rem;
+}
+.order-app-detail-right-part p {
+    margin: 0 0 5px;
+}
+.order-app-detail-right-part p:last-child {
+    margin-bottom: 0;
+}
+.download-product-pdf li a img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+.order-app-detail-right-part a.Polaris-Link {
+    text-decoration: none;
+}
+.order-app-detail-right-part a.Polaris-Link:hover {
+    text-decoration: underline;
+}
+.setting-upload .Polaris-TextField {
+    display: block;
+}
+.upload-btn {
+    display: block;
+    margin: 10px 0 0;
+}
+.setting-upload .Polaris-TextField img {
+    object-fit: contain;
+    border: 1px solid #ddd;
+    padding: 5px;
+    background-color: #fbfbfb;
+}
+.upload-btn .btn {
+    padding: 6px 15px;
+    font-size: 14px;
+}
+.upload-btn .btn.btn-primary {
+    background: #008060;
+    border-color: #008060;
+}
+.upload-btn .btn.btn-primary:hover {
+    background: #006e52;
+    border-color: #006e52;
+}
+.delete-logo {
+    border: 0.1rem solid #fd5749;
+    box-shadow: none;
+    color: #d82c0d;
+    background: transparent;
+}
+.delete-logo:hover {
+    background: #fff4f4;
+    color: #d82c0d;
+    border: 0.1rem solid #fd5749;
+}
+.order-app-detail-right-part .Polaris-Button--plain:hover, .order-app-detail-right-part .Polaris-Button--plain:focus {
+    color: var(--p-interactive);
+    text-decoration: none !important;
+}
+.Polaris-Button--destructive.Polaris-Button--outline.Polaris-Button--destructive {
+    text-transform: capitalize;
+}
+.footer.pt-1.pb-4.text-center {
+    color: #686868;
+}
+.Polaris-Label__Text.price-text {
+    font-size: 16px;
+}
+.Polaris-Label.usd {
+    font-weight: 600;
+}
+/*.order-list table tr th {
+    white-space: nowrap;
+}*/
+.Polaris-Button.cancel-btn:hover {
+    background: #f6f6f7;
+    color: #212529;
+}
+.colose-colorrail.sizerail label span {
+    width: auto;
+    height: auto;
+    border-radius: initial;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 4px;
+    min-width: 22px;
+    font-weight: 600;
+    border: 0;
+}
+.colose-colorrail.sizerail label span:after {
+    border: 1px solid #008060;
+    position: absolute;
+    content: "";
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+}
+.sizerail label input:checked ~ span {
+    background: #008060 !important;
+    color: #fff;
+} 
+.app-custom-popup .modal-dialog {
+    max-width: 620px;
+}
+.app-custom-popup .modal-header {
+    padding: 1.3rem 2rem;
+    align-items: center;
+}
+.app-custom-popup .modal-header .close {
+    font-size: 25px;
+}
+.app-custom-popup .modal-header .modal-title {
+    color: #202223;
+    font-size: 20px;
+    font-weight: 500;
+}
+.app-custom-popup .modal-body, .app-custom-popup .modal-footer {
+    padding: 1.3rem 2rem;
+}
+.app-custom-popup .modal-body p {
+    font-size: 15px;
+}
+.app-custom-popup .modal-footer .btn {
+    font-size: 14px;
+    margin: 0;
+}
+.app-custom-popup .modal-footer .cancel-btn {
+    margin-right: 10px;
+}
+.app-custom-popup .modal-footer .btn-danger {
+    min-height: 3.6rem;
+    min-width: 3.6rem;
+    margin: 0;
+    padding: 0.7rem 1.6rem;
+}
+a.Polaris-Button--primary {
+    line-height: initial;
+}
+body .select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #008060;
+}
+.table-borderless .Polaris-TextField__Prefix {
+    margin-left: 0;
+    color: #202223;
+}
+.table-borderless .Polaris-TextField__Prefix + .Polaris-TextField__Input {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--p-border-subdued);
+    border-radius: var(--p-border-radius-base);
+}
+.table-borderless .Polaris-TextField__Backdrop {
+    border: 0;
+    border-radius: initial;
+}
+.btn-cst {
+    margin-right: 15px;
+}
+.btn-cst a {
+    color: #3152bb;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    margin-right: 5px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.btn-cst a:hover {
+    color: #1f5199;
+}
+.Bad {
+    background-color: #fff5ea;
+    border: 1px solid #e1b877;
+    box-shadow: none;
+}
+.Good {
+    background-color: #e9f8fc;
+    border: 1px solid #24a2ae;
+    box-shadow: none;
+}
+.set-dpi {
+    position: absolute;
+    padding: 6px;
+    opacity: 0;
+}
+.set-dpi:after {
+    position: absolute;
+    content: "";
+    border-left: 70px solid #fdf7e3;
+    border-top: 0px solid transparent;
+    border-bottom: 50px solid transparent;
+    top: 0;
+    left: 0;
+}
+.set-dpi p {
+    display: inline-block;
+    color: #000;
+    font-weight: bold;
+    position: absolute;
+    z-index: 1;
+    font-size: 11px;
+    transform: rotate(-33deg);
+    top: -8px;
+    width: 100px;
+    left: -4px;
+    text-align: left;
+}
+.oderdestlistimg input[type="radio"]:checked + .prod-sect .set-dpi {
+    opacity: 1;
+}
+.oderdestlisthold ul li .oderdestlistimg:hover .set-dpi {
+    opacity: 1;
+}
+.select-product-part .Polaris-List {
+    padding: 0;
+}
+.select-product-part .Polaris-List li.sub-category {
+    padding-left: 20px;
+    cursor: pointer;
+}
+.select-product-part .Polaris-List li {
+    cursor: initial;
+}
+.select-product-part .Polaris-List li.sub-category:hover {
+    color: #008060;
+}
+.select-product-part label.Polaris-Card {
+    width: 100%;
+    overflow: hidden;
+}
+.select-product-part .Polaris-List li .Polaris-Heading {
+    font-size: 2rem;
+}
+.front-icon i.fa-check-circle {
+    color: #007f62;
+    font-size: 16px;
+}
+.front-icon i.fa-exclamation-circle {
+    color: #bb882c;
+    font-size: 16px;
+}
+.choose_design .Polaris-Modal-Section .oderdestlisthold .prod-sect {
+    cursor: pointer;
+}   
+.app-order-detail .Polaris-ResourceList li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.lightbox {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: column-reverse;
+}
+.lightbox.lightbox .lb-dataContainer a.lb-close {
+    margin-right: -30px;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+}
+.custom-flex .prod-item {
+    padding-left: 10px;
+}
+.order-list table tbody tr {
+    cursor: pointer;
+}
+.toast.toast-error {
+    background-color: rgba(254, 211, 209, 1) !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    border-top: 2px solid #de3618 !important;
+    opacity: 1 !important; 
+}
+.toast.toast-success {
+    opacity: 1 !important;
+    background-color: rgba(174, 233, 209, 1) !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    border-top: 3px solid #00a47c !important;
+}
+.toast.toast-info {
+    opacity: 1 !important;
+    background-color: #36c4fc !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    border-top: 3px solid #2f96b4 !important;
+}
+.toast.toast-info .toast-message, .toast.toast-info button {
+    color: #fff;
+}
+.toast button.toast-close-button {
+    color: #202223;
+    text-shadow: none;
+}
+.toast .toast-message {
+    color: #202223;
+    font-weight: 500;
+    margin: 0.5rem;
+}
+body #toast-container>.toast-error, body #toast-container>.toast-success {
+    background-image: none !important;
+}
+.toast.toast-error:before, .toast.toast-success:before {
+    background: url(../images/attention-icon.svg);
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    background-size: 30px;
+    margin-top: 5px;
+}
+.toast.toast-success:before {
+    background: url(../images/success-check-icon.svg);
+    background-size: 30px;
+}
+/*.app-order-page table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}*/
+.app-order-page table tbody tr td {
+    vertical-align: top;
+}
+.app-order-page table thead th:nth-child(7) {
+    min-width: 80px !important;
+}
+.app-order-page table tbody tr td i.fa-check {
+    display: inline-block;
+    cursor: pointer;
+    color: #202223;
+    border: 1px solid #858585dd;
+    height: 26px;
+    width: 26px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.app-order-page table tbody tr td i.fa-check:hover {
+    background: rgba(0, 123, 255, 0.2);
+    border-color: #007bff;
+}
+.app-order-page .customer-table table tr th, .customer-table table tr td, .customer-table table.dataTable tr td,.customer-table table tr th, .customer-table table.dataTable tr th {
+    padding: 8px !important;
+}
+
+
+.app-order-page .customer-table table tr th:nth-child(1) {
+    width: 80px !important;
+}
+.app-order-page .customer-table table tr th:nth-child(2) {
+    width: 40px !important;
+}
+.app-order-page .customer-table table tr th:nth-child(3) {
+    width: 70px !important;
+}
+.app-order-page .customer-table table tr th:nth-child(4) {
+    width: 140px !important;
+}
+.app-order-page .customer-table table tr th:nth-child(5) {
+    width: 70px !important;
+}
+.app-order-page .customer-table table tr th:nth-child(6) {
+    width: 70px !important;
+}
+.app-order-page .customer-table table tr th:nth-child(7) {
+    width: 90px !important;
+}
+.app-order-page .customer-table table tr th:nth-child(8), .app-order-page .customer-table table tr th:nth-child(9) {
+    width: 60px !important;
+}
+.app-order-page .customer-table table tr th:last-child {
+    width: 40px !important;
+}
+.app-order-page .custom-flex .prod-item {
+    padding-left: 5px;
+    font-size: 13px;
+}       
+
+/*05-02-22*/
+.Polaris-Page-Header {padding-top: 0rem;}
+.new-badge.Popular {background: #92e6b5;color: #fff;}
+.new-badge.New {background: #00a0ac;color: #fff;}
+/*label.prod-sect-holdcnt-Card input[type="radio"]:checked + .prod-sect-holdcnt {width: 212px;}*/
+div#toast-container .toast .toast-title, .toast-message {font-size: 14px;color: #202223;}
+.product-detail-page .custom-popup .modal-dialog .modal-content .Polaris-Modal-Header {align-items: center;}
+.product-detail-page .custom-popup .modal-dialog .modal-content .Polaris-Modal-Header .Polaris-Modal-Header__Title {margin-top: 0rem;}
+.product-detail-page .custom-popup .Polaris-Modal-Section .modal-body .form-group {margin-bottom: 0rem;}
+.product-detail-page .custom-popup .Polaris-Modal-Section .modal-body {padding: 1rem 1.6rem 1.6rem 1.6rem;}
+.custom-popup .Polaris-Modal-Section .modal-body .Polaris-Connected .Polaris-DataTable__Table tbody tr td {vertical-align: middle;} 
+.custom-popup .Polaris-Modal-Section .modal-body .Polaris-Connected .Polaris-DataTable__Table tbody tr td .tblnin-inumbr {width: 75%;}
+/*.custom-popup .Polaris-Modal-Section .modal-body .Polaris-Connected .Polaris-DataTable__Table tbody tr td .tblnin-inumbr input.Polaris-TextField__Input:focus {border-color: #80bdff;}*/
+.choose_design .oderdestlistimg {max-height: 120px;height: 120px;}
+.choose_design .Polaris-Modal-Section .oderdestlisthold {padding: 7px;}
+.choose_design .Polaris-Modal-Header {align-items: center;}
+.choose_design .Polaris-Modal-Header .Polaris-Modal-Header__Title {margin-top: 0rem;}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li.select2-search, .tagscoltion .select2-container--focus .select2-selection--multiple .select2-selection__rendered li:last-child {display: none;}
+.campaign-back-btn_flx {display: flex;justify-content: space-between;align-items: center;}
+.campaign-back-btn_flx .fd_store_name {font-size: 16px;font-weight: 600;}

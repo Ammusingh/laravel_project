@@ -1,0 +1,19 @@
+------------------------------------------------
+Technical Round Assignment
+------------------------------------------------
+1. Setup a project on laravel 8 (Done)
+2. Create three roles Admin, Incharge and User with separate logins.
+3. Create three modules: department, incharge and complaints. (Done)
+4. CRUD operation for department and incharge. (Done)
+Create form for assigning department and an incharge,
+Fields for department -> name
+Fields for incharge -> Name, email, password
+5. CRUD operation where admin can allott at least one or multiple departments to one
+incharge.
+6. Users can create a complaint based on the department. (Done)
+Fields for complaint form,
+user email, complaint text, department dropdown. If an incharge is not assigned to a
+department, then that department will not be listed to assign the complaint.
+7. The complaint should display in the respective department incharge's account with user
+details who has filed the complaint.
+8. Admin can add departments , incharge and assign departments to incharge

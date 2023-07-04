@@ -1,0 +1,43 @@
+************************************** Laravel Add Background queue process ***************************
+Add Driver on .env file 
+
+QUEUE_DRIVER=database​
+
+php artisan make:job SendEmails​ // Creating a Background jobs 
+
+use functions for jobs call 
+SendEmails::dispatch($post);
+
+Steps for Background queues Jobs 
+
+- we created a new job
+- added business logic to it
+- dispatched this new job from our controller class
+- changed driver to databse in .env file
+- setup supervisor to run background jobs
+- start the supervisor worker
+
+******laravel supervisor file :******
+
+sudo apt update && sudo apt install supervisor
+sudo systemctl status supervisor
+
+file_path  : cd /etc/supervisor/conf.d
+
+sudo nano laravel-worker.conf
+
+[program:laravel-worker]
+process_name=%(program_name)s_%(process_num)02d
+command=php /var/www/html/stannp/artisan queue:work --queue=high,default database --timeout=3600 --sleep=3 --tries=1 --daemon
+autostart=true
+autorestart=true
+user=root
+numprocs=4
+redirect_stderr=true
+stdout_logfile=/var/www/html/stannp/storage/logs/queue.log
+
+sudo supervisorctl reread
+sudo supervisorctl update
+sudo supervisorctl start project-name-worker:*
+
+
